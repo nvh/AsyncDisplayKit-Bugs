@@ -14,6 +14,7 @@
 		B3C1843C1C57575D005B6324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C1843A1C57575D005B6324 /* LaunchScreen.storyboard */; };
 		B3C184471C57575D005B6324 /* AsyncDisplayKit_BugsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C184461C57575D005B6324 /* AsyncDisplayKit_BugsTests.swift */; };
 		B3C184521C57575D005B6324 /* AsyncDisplayKit_BugsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C184511C57575D005B6324 /* AsyncDisplayKit_BugsUITests.swift */; };
+		B3C184611C5757F6005B6324 /* ExtendedMultiplexImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C184601C5757F6005B6324 /* ExtendedMultiplexImageNode.swift */; };
 		B3C184641C57582A005B6324 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C184631C57582A005B6324 /* AsyncDisplayKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		B3C184511C57575D005B6324 /* AsyncDisplayKit_BugsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncDisplayKit_BugsUITests.swift; sourceTree = "<group>"; };
 		B3C184531C57575D005B6324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3C1845F1C575772005B6324 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		B3C184601C5757F6005B6324 /* ExtendedMultiplexImageNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedMultiplexImageNode.swift; sourceTree = "<group>"; };
 		B3C184631C57582A005B6324 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = Carthage/Build/iOS/AsyncDisplayKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				B3C184381C57575D005B6324 /* Assets.xcassets */,
 				B3C1843A1C57575D005B6324 /* LaunchScreen.storyboard */,
 				B3C1843D1C57575D005B6324 /* Info.plist */,
+				B3C184601C5757F6005B6324 /* ExtendedMultiplexImageNode.swift */,
 				B3C184621C575812005B6324 /* Frameworks */,
 			);
 			path = "AsyncDisplayKit-Bugs";
@@ -292,6 +295,7 @@
 			files = (
 				B3C184341C57575D005B6324 /* ViewController.swift in Sources */,
 				B3C184321C57575D005B6324 /* AppDelegate.swift in Sources */,
+				B3C184611C5757F6005B6324 /* ExtendedMultiplexImageNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
