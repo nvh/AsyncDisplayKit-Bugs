@@ -47,6 +47,7 @@
 		B3C1844D1C57575D005B6324 /* AsyncDisplayKit-BugsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AsyncDisplayKit-BugsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C184511C57575D005B6324 /* AsyncDisplayKit_BugsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncDisplayKit_BugsUITests.swift; sourceTree = "<group>"; };
 		B3C184531C57575D005B6324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3C1845F1C575772005B6324 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		B3C184251C57575D005B6324 = {
 			isa = PBXGroup;
 			children = (
+				B3C1845F1C575772005B6324 /* Cartfile */,
 				B3C184301C57575D005B6324 /* AsyncDisplayKit-Bugs */,
 				B3C184451C57575D005B6324 /* AsyncDisplayKit-BugsTests */,
 				B3C184501C57575D005B6324 /* AsyncDisplayKit-BugsUITests */,
