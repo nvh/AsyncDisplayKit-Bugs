@@ -14,6 +14,7 @@
 		B3C1843C1C57575D005B6324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C1843A1C57575D005B6324 /* LaunchScreen.storyboard */; };
 		B3C184471C57575D005B6324 /* AsyncDisplayKit_BugsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C184461C57575D005B6324 /* AsyncDisplayKit_BugsTests.swift */; };
 		B3C184521C57575D005B6324 /* AsyncDisplayKit_BugsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C184511C57575D005B6324 /* AsyncDisplayKit_BugsUITests.swift */; };
+		B3C184641C57582A005B6324 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C184631C57582A005B6324 /* AsyncDisplayKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		B3C184511C57575D005B6324 /* AsyncDisplayKit_BugsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncDisplayKit_BugsUITests.swift; sourceTree = "<group>"; };
 		B3C184531C57575D005B6324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3C1845F1C575772005B6324 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		B3C184631C57582A005B6324 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = Carthage/Build/iOS/AsyncDisplayKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C184641C57582A005B6324 /* AsyncDisplayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +108,7 @@
 				B3C184381C57575D005B6324 /* Assets.xcassets */,
 				B3C1843A1C57575D005B6324 /* LaunchScreen.storyboard */,
 				B3C1843D1C57575D005B6324 /* Info.plist */,
+				B3C184621C575812005B6324 /* Frameworks */,
 			);
 			path = "AsyncDisplayKit-Bugs";
 			sourceTree = "<group>";
@@ -127,6 +131,15 @@
 			path = "AsyncDisplayKit-BugsUITests";
 			sourceTree = "<group>";
 		};
+		B3C184621C575812005B6324 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3C184631C57582A005B6324 /* AsyncDisplayKit.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +150,7 @@
 				B3C1842A1C57575D005B6324 /* Sources */,
 				B3C1842B1C57575D005B6324 /* Frameworks */,
 				B3C1842C1C57575D005B6324 /* Resources */,
+				B3C184651C575838005B6324 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -252,6 +266,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3C184651C575838005B6324 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AsyncDisplayKit.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B3C1842A1C57575D005B6324 /* Sources */ = {
@@ -401,6 +433,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "AsyncDisplayKit-Bugs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.zekerwaar.AsyncDisplayKit-Bugs";
@@ -412,6 +448,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "AsyncDisplayKit-Bugs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.zekerwaar.AsyncDisplayKit-Bugs";
